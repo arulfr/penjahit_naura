@@ -16,11 +16,13 @@ app.use(express.static('public'));
 app.use('/',Router);
 app.use('/admin',adminRouter);
 
-// Connect to Database
-connectDB().then(()=>{
     app.listen(PORT,()=>{
         console.log(`Server is running on http://localhost:${PORT}`);
     });
-}).catch((err)=>{
-    console.error("Failed to connect to the database",err);
-});
+
+// Connect to Database
+// connectDB().then(()=>{
+
+// }).catch((err)=>{
+//     console.error("Failed to connect to the database",err);
+// });
