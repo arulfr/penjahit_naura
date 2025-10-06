@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('head'); %>
+<body>
+	<div class="wrapper">
+
+        <%- include("headMenu"); %>
+
+		<!-- Sidebar -->
+        <%- include("sideMenu"); %>
+		<!-- End Sidebar -->
+
+        <!-- Main Panel -->
+        <%- include(`./pages/${page}.ejs`); %>
+        <!-- end Main Panel -->
+
+		<%- include('footer'); %>
+	</div>
+
+</body>
+</html>
